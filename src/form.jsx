@@ -27,13 +27,13 @@ export default function FormPage() {
     e.preventDefault();
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/predict", {
+      const response = await fetch("https://pph-app.onrender.com/predict", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
+            "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
-      });
+    });
 
       const data = await response.json();
       console.log("Backend response:", data);
