@@ -46,15 +46,16 @@ export default function LandingPage() {
   // Generate advice based on risk level
   const getAdvice = (riskLevel) => {
     switch (riskLevel?.toLowerCase()) {
-      case "low":
-        return "🟢 Low Risk: Your risk level is low. Continue with regular antenatal visits, eat a balanced diet, and follow your healthcare provider’s advice. Staying consistent with care will help ensure a safe pregnancy for you and your baby.";
-      case "medium":
-        return "🟠 Medium Risk: You are at a moderate risk for complications. Please visit a nearby hospital or clinic for further evaluation and monitoring. Early check-ups and medical guidance can help prevent problems and keep you and your baby safe.";
-      case "high":
-        return "⚠️ High Risk: You are at a high risk for complications. It is strongly advised that you go to a higher-level hospital immediately for specialized care. Do not delay or attempt self-medication. Prompt attention from an advanced facility can help protect your life and your baby’s.";
-      default:
-        return "No advice available. Please try again.";
-    }
+  case "low":
+    return "🟢 Low Risk: Patient presents a low risk of complications. Continue with routine antenatal monitoring and standard care protocols. No immediate intervention is required beyond regular follow-up.";
+  case "medium":
+    return "🟠 Medium Risk: Patient has a moderate risk for complications. Recommend closer observation and schedule more frequent antenatal visits. Consider basic investigations and ensure readiness for timely referral if condition worsens.";
+  case "high":
+    return "⚠️ High Risk: Patient is at a high risk of complications. Immediate referral to a higher-level facility is advised. Prepare stabilization measures if necessary and ensure prompt transfer for specialized obstetric care.";
+  default:
+    return "No advice available. Please review patient details and try again.";
+}
+
   };
 
   return (
