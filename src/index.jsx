@@ -178,7 +178,7 @@ export default function LandingPage() {
           {[
             { name: "Anaemia", label: "Anaemia (Low Blood Level)", options: ["No","Yes"] },
             { name: "DeliveryMethod", label: "Delivery Method", options: ["Normal","Cesarean"] },
-            { name: "HistoryPPH", label: "History of Postpartum Haemorrhage (PPH)", options: ["No","Yes"] },
+            { name: "HistoryPPH", label: "History of Postpartum Haemorrhage", options: ["No","Yes"] },
           ].map(({ name, label, options }) => (
             <div key={name} className="flex flex-col">
               <label className="text-[#4A7C59] font-semibold mb-1">{label}</label>
